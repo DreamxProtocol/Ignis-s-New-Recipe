@@ -5,41 +5,63 @@
         <meta name = "viewport" content = "width = device-width, initial scale = 1">
         <title>Ignis's New Recipe</title>
         <link rel ="stylesheet" href = "C:\Users\Marsea\Desktop\Ignis's New Recipe\CSS\Ignis's_New_Recipe.css">
+        <script type = "text/javascript" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\JavaScript\Ignis.js"></script>
     </head>
     <header>
         <h1>Ignis's New Recipe</h1>
-        <ul>
-            <li><button>Home</button></li>
-            <li><button>Menu</button></li>
-            <li><button>Contact Us</button></li>
+        <label onclick="toggle()" id = "ham_icon">&#9776;</label>
+        <ul id = "navv">
+            <li class = "nav_decor"><a href = "">Home</a></li>
+            <li class = "nav_decor"><a href = "">Menu</a></li>
+            <li class = "nav_decor"><a href = "">Contact Us</a></li>
         </ul>
     </header>
     <body>
         <main>
             <h2>That's it! I've come up with a new recipe!</h2>
         </main>
-        <div>
-            <h3>Coming to the menu soon!</h3>
-            <figure>
-                <img src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Coming Soon\Elegant_Orange_Cake.png" alt = " ">
-                <figcaption>
-                    <span class = "item_name">Elegant Orange Cake</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Coming Soon\Kupoberry_Cheesecake.png" alt = " ">
-                <figcaption>
-                    <span class = "item_name">Kupoberry Cheesecake (Moogle Cheesecake)</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Coming Soon\Memory_Lane_Pastry.png" alt = " ">
-                <figcaption>
-                    <span class = "item_name">Memory Lane Pastry (Pastry of Memories)</span>
-                </figcaption>
-            </figure>
-        </div>
 
+
+
+
+        
+
+        <div id = "featured_container">
+            <h3 id = "featured_soon">Coming to the menu soon!</h3>
+            <figure class = "featured_items active">
+                <img  src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Coming Soon\Elegant_Orange_Cake.png" alt = " ">
+                <figcaption class = "featured_food_name_container">
+                    <span>Elegant Orange Cake</span>
+                </figcaption>
+            </figure>
+            <figure class = "featured_items">
+                <img src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Coming Soon\Kupoberry_Cheesecake.png" alt = " ">
+                <figcaption class = "featured_food_name_container">
+                    <span>Kupoberry Cheesecake (Moogle Cheesecake)</span>
+                </figcaption>
+            </figure>
+            <figure class = "featured_items">
+                <img src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Coming Soon\Memory_Lane_Pastry.png" alt = " ">
+                <figcaption class = "featured_food_name_container">
+                    <span>Memory Lane Pastry (Pastry of Memories)</span>
+                </figcaption>
+            </figure>    
+        </div>
+            <div id = "left"> &#60; </div>
+            <div id = "right"> &#62; </div>
+            
+        </div>
+        
+
+
+
+
+
+
+
+
+
+        
         <div>
             <h3>Menu</h3>
 
