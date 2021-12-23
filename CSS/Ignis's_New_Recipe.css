@@ -4,24 +4,37 @@
     padding: 0;
 }
 
+/* contains the restaurant name and nav */
 header{
     display:flex;
     flex-direction: column;
     align-items: center;
     border: solid black 1px;
-    margin-top: 2vh;
+    margin: 2vh auto 0;
+    width: 95vw;
 }
 
+/* ham and nav to the right */
 #ham_icon, #navv{
     align-self: flex-end;
     margin-right: 5px;
 }
 
+#ham_icon{
+    border: solid black 1px;
+    text-align: center;
+    width: 20px;
+    margin-bottom: 5px;
+    border-radius: 5%;
+}
+
+/* restaurant name */
 h1{
     margin-top: 2%;
 }
 
 #navv{
+    /* position: absolute; */
     list-style:none;
     display: none;
 }
@@ -37,129 +50,87 @@ a{
     text-decoration: none;
 }
 
-#featured_container{
+#body_container{
+    border:solid black 1px;
+    margin: 2vh auto 0;
+    width: 93vw;
+    height: 80vh;
+}
 
+main{
+    border:solid black 1px;
+    margin: 2vh auto 0;
+    width: 95%;
+}
+ 
+/* catchy quote? */
+h2{
+    text-align: center;
+
+}
+
+
+
+/* container for featured items */
+#featured_container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border:solid black 1px;
-    height:300px;
-    margin-top: 5%;
-
+    height:325px;
+    margin: 5% auto 0;
+    padding: 10px 0 10px 0;
+    width: 90%
 }
 
-#featured_soon{
-    position: absolute;
-    top: 25vh;
-}
-
+/* featured items to be viewed "next"/"previous"... deserts */
 .featured_items{
-    position: absolute;
     display:none;
+    margin: 5% auto 0;
 }
 
 .active{
     display:block;
 }
 
-#left, #right{
-    position: absolute;
-    top: 72vh;
+.featured_pic{
+    width: 85%;
+    height: 85%;
+    margin-left: 25px;
 }
 
-#left{
-    left: 80px;
-}
-
-#right{
-    right: 80px;
+/* because the first featured pic is smaller than the rest */
+#orange_cake{
+    height: 93%;
 }
 
 .featured_food_name_container{
     text-align: center;
+    border: solid black 1px;
+    width: 55%;
+    margin: 0 auto;
 }
 
+/* circles underneath the featured items that allow you to change item */
+#switchers{
+    margin-top: 10px;;
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #slider{
-
-    position:relative;
+/* circles */
+#left, #right, #middle{
     border:solid black 1px;
-
-}
-
-#slider .left_slide, #slider .right_slide{
-
+    width:20px;
+    height:20px;
+    border-radius: 50%;
     cursor: pointer;
-    position: absolute;
-    top:50%;
-
-}
-
-.left_slide{
-
-    left: 38%;
-
-}
-
-.right_slide{
-    
-    right: 38%;
-
 }
 
 
 
-
-.slider_items{
-
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-
-
-
-}
-
-
-
-.item{
-    position: relative;
+#none{
     display:none;
-    
-
 }
-
-.caption{
-    position: absolute;
-
-}
-
-.item.active{
-
-    display:block;
-
-} */
