@@ -4,28 +4,35 @@
     padding: 0;
 }
 
+html{
+    background-color: rgb(215, 223, 229);
+}
+
 /* contains the restaurant name and nav */
 header{
     display:flex;
     flex-direction: column;
     align-items: center;
     border: solid black 1px;
-    margin: 2vh auto 0;
-    width: 95vw;
+    margin: 0 auto;
+    width: 100vw;
+    background-color: rgb(121, 187, 209);
 }
 
 /* ham and nav to the right */
 #ham_icon, #navv{
-    align-self: flex-end;
-    margin-right: 5px;
+    align-self: flex-start;
+    margin-left: 5px;
 }
 
 #ham_icon{
-    border: solid black 1px;
     text-align: center;
-    width: 20px;
+    width: 35px;
     margin-bottom: 5px;
     border-radius: 5%;
+    font-size: 20px;
+    color: rgb(106, 73, 15);
+    font-weight: bold;
 }
 
 /* restaurant name */
@@ -34,42 +41,49 @@ h1{
 }
 
 #navv{
-    /* position: absolute; */
+    position: absolute;
+    top: 14.5%;
     list-style:none;
     display: none;
+    border: solid black 1px;
+    width: 50%;
+    padding: 5px;
+    background-color: rgb(167, 212, 227);
 }
 
 .nav_decor{
-    border: solid black 1px;
-    margin-top: 5px;
-    padding: 5px;
+    border-bottom: solid white 2px;
+    margin: 10px auto 0;
     text-align: center;
 }
 
-a{
-    text-decoration: none;
+button{
+    border: none;
+    background: rgba(181, 150, 96, .60) ;
+    width: 95%;
+    height: 40px;
 }
 
-#body_container{
+#home_container{
     border:solid black 1px;
-    margin: 2vh auto 0;
-    width: 93vw;
-    height: 80vh;
+    margin: 2% auto 0;
+    width: 95vw;
+    height: 82vh;
+    background-color: rgb(139, 117, 79);
+    display: none;
 }
 
 main{
     border:solid black 1px;
-    margin: 2vh auto 0;
+    margin: 2% auto 0;
     width: 95%;
+    background-color: rgb(240, 214, 184);
 }
  
 /* catchy quote? */
 h2{
     text-align: center;
-
 }
-
-
 
 /* container for featured items */
 #featured_container{
@@ -78,10 +92,11 @@ h2{
     align-items: center;
     justify-content: space-between;
     border:solid black 1px;
-    height:325px;
+    height:77%;
     margin: 5% auto 0;
     padding: 10px 0 10px 0;
-    width: 90%
+    width: 90%;
+    background-color: rgb(223, 205, 184); 
 }
 
 /* featured items to be viewed "next"/"previous"... deserts */
@@ -97,7 +112,8 @@ h2{
 .featured_pic{
     width: 85%;
     height: 85%;
-    margin-left: 25px;
+    margin-left: 7.5%;
+    border: solid rgb(143, 130, 116) 5px;
 }
 
 /* because the first featured pic is smaller than the rest */
@@ -110,11 +126,11 @@ h2{
     border: solid black 1px;
     width: 55%;
     margin: 0 auto;
+    background-color: rgb(215, 210, 204);  
 }
 
 /* circles underneath the featured items that allow you to change item */
 #switchers{
-    margin-top: 10px;;
     width:50%;
     display: flex;
     justify-content: space-between;
@@ -126,11 +142,71 @@ h2{
     width:20px;
     height:20px;
     border-radius: 50%;
-    cursor: pointer;
+    background-color: rgb(178, 194, 199);
+}
+
+/* container for the entire menu */
+#menu_container{
+    margin: 2% auto 0;
+    border:solid black 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu_text{
+    text-align: center;
+}
+
+/* sections for type of food along with the menu items Ex. kids, desert, etc. */
+section{
+    border: solid blueviolet 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 75vh;
+}
+
+/* container for ALL menu items only to seperate it from <h4>food type</h4> */
+.menu_items_container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: solid yellow 2px;
+    width: 98%;
+    height: 98%;
+
+
+}
+
+/* individual menu items */
+.menu_items{
+    border: solid black 1px;
+    width: 50%;
+    height: 45%;
+    /* margin-left: 5%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu_pic{
+    width: 70%;
+    height: 70%;
+}
+
+figcaption{
+    text-align: center;
 }
 
 
 
-#none{
+
+
+#none, .desktop_menu{
     display:none;
 }

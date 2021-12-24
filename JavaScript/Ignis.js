@@ -1,13 +1,11 @@
 function toggle() {
     const x = document.getElementById("navv");
-    if (x.style.display === "none"){
-        x.style.display = "block";
-    } else{
+    if (x.style.display === "block"){
         x.style.display = "none";
+    } else{
+        x.style.display = "block";
     }
 }
-
-
 
 function firstItem() {
     const first = document.getElementById("featured_items0");
@@ -37,6 +35,12 @@ function thirdItem() {
     first.style.display = "none";
     second.style.display = "none";
     third.style.display = "block";
+}
+
+function con() {
+
+    console.log("hey");
+
 }
 
 
