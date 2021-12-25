@@ -9,11 +9,11 @@
     </head>
     <header>
         <h1>Ignis's New Recipe</h1>
-        <label onclick="toggle()" id = "ham_icon">&#9776;</label>
+        <label onclick="nav_toggle()" id = "ham_icon">&#9776;</label>
         <ul id = "navv">
-            <li class = "nav_decor"><button onclick="con()">Home</button></li>
-            <li class = "nav_decor"><button onclick="con()">Menu</button></li>
-            <li class = "nav_decor"><button onclick="con()">Contact Us</button></li>
+            <li class = "nav_decor"><button onclick="home_on()">Home</button></li>
+            <li class = "nav_decor"><button onclick="menu_on()">Menu</button></li>
+            <li class = "nav_decor"><button onclick="form_on()">Contact Us</button></li>
         </ul>
     </header>
     <body>
@@ -23,6 +23,7 @@
             </main>
             <div id = "featured_container">
                 <h3 id = "featured_soon">Coming to the menu soon!</h3>
+                
                 <figure class = "featured_items active" id ="featured_items0">
                     <img  class = "featured_pic" id = "orange_cake" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Coming Soon\Elegant_Orange_Cake.png" alt = " ">
                     <figcaption class = "featured_food_name_container">
@@ -68,197 +69,313 @@
 
                     <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Sandwich\Grease_Monkey_Schnitzel_Sandwich.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Garula Sirloin with Cleigne Wheat</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
+                        <span class = "item_name">Grease Monkey's Schnitzel Sandwich</span>
                         <figcaption>
-                            <span class = "item_name">Grease Monkey's Schnitzel Sandwich (Meaty Cutlet Sandwich)</span>
-                            <div class = "desktop_menu">   
+                            <span class = "item_name">Grease Monkey's Schnitzel Sandwich</span>
+                            <div class = "desktop_menu_details">   
                                 <span class = "ingredients">Garula Sirloin with Cleigne Wheat</span>
                                 <span class = "cost">? Gil </span>
                             </div>
-                            <details class = "mobile_menu">
-                                <summary>Details</summary>
-                                <span class = "ingredients">Garula Sirloin with Cleigne Wheat</span>
-                                <span class = "cost">? Gil </span>
-                            </details>
                         </figcaption>
                     </figure>
 
                     <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Sandwich\Stacked_Ham_Sandwich.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Garula Sirloin, Fine Gighee Ham, and Aegir Root</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
+                        <span class = "item_name">Stacked Ham Sandwich</span>
                         <figcaption>
-                            <span class = "item_name">Stacked Ham Sandwich (Ham Sandwich - Meteor Serving)</span>
-                            <div class = "desktop_menu">
+                            <span class = "item_name">Stacked Ham Sandwich</span>
+                            <div class = "desktop_menu_details">
                                 <span class = "ingredients">Garula Sirloin, Fine Gighee Ham, and Aegir Root</span>
                                 <span class = "cost"> ? Gil </span>
-                            </div>
-                            <details class = "mobile_menu">
-                                <summary>Details</summary>
-                                <span class = "ingredients">Garula Sirloin, Fine Gighee Ham, and Aegir Root</span>
-                                <span class = "cost">? Gil </span>
-                            </details>
+                            </div> 
                         </figcaption>
                     </figure>
 
                     <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Sandwich\Cannedwich.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Luncheon Meat with Cleigne Wheat</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
+                        <span class = "item_name">Cannedwich</span>
                         <figcaption>
-                            <span class = "item_name">Cannedwich (Simple Canned Sandwich)</span>
-                            <div class = "desktop_menu">
+                            <span class = "item_name">Cannedwich</span>
+                            <div class = "desktop_menu_details">
                                 <span class = "ingredients">Luncheon Meat with Cleigne Wheat</span>
                                 <span class = "cost">? Gil </span>
-                            </div>
-                            <details class = "mobile_menu">
-                                <summary>Details</summary>
-                                <span class = "ingredients">Luncheon Meat with Cleigne Wheat</span>
-                                <span class = "cost">? Gil </span>
-                            </details>
+                            </div> 
                          </figcaption>
                     </figure>
 
                     <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Sandwich\Multi-Meat_Sandwich.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Daggerquill Breast, Gighee Ham, and Aegir Root</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
+                        <span class = "item_name">Multi-Meat Sandwich</span>
                         <figcaption>
-                            <span class = "item_name">Multi-Meat Sandwich (Chicken Tender and Ham Sandwich)</span>
-                            <div class = "desktop_menu">
+                            <span class = "item_name">Multi-Meat Sandwich</span>
+                            <div class = "desktop_menu_details">
                                 <span class = "ingredients">Daggerquill Breast, Gighee Ham, and Aegir Root</span>
                                 <span class = "cost">? Gil</span>
-                            </div>
-                            <details class = "mobile_menu">
-                                <summary>Details</summary>
-                                <span class = "ingredients">Daggerquill Breast, Gighee Ham, and Aegir Root</span>
-                                <span class = "cost">? Gil </span>
-                            </details>
+                            </div> 
                         </figcaption>
                     </figure>
 
                 </div>
             </section>
 
-            <!-- <section>
+            <section>
                 <h4>Meats</h4>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Pit-Crews-Meat-Wraps.png">
-                    <figcaption>
+                <div class = "menu_items_container">
+
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Pit-Crews-Meat-Wraps.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Bulette Shank, Killer Tomato, and Sweet Pepper</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
                         <span class = "item_name">Pit Crew's Meat Wraps</span>
-                        <span class = "ingredients">Bulette Shank, Killer Tomato, and Sweet Pepper</span>
-                        <span class = "cost">? Gil </span>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Thick_Juicy_Steak.png">
-                    <figcaption>
+                        <figcaption>
+                            <span class = "item_name">Pit Crew's Meat Wraps</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Bulette Shank, Killer Tomato, and Sweet Pepper</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Thick_Juicy_Steak.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Catoblepas Brisket wtih Kettier Ginger</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
                         <span class = "item_name">Thick 'n' Juicy Steak</span>
-                        <span class = "ingredients">Catoblepas Brisket wtih Kettier Ginger</span>
-                        <span class = "cost">? Gil </span>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Smoked_Behemoth.png">
-                    <figcaption>
+                        <figcaption>
+                            <span class = "item_name">Thick 'n' Juicy Steak</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Catoblepas Brisket wtih Kettier Ginger</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Smoked_Behemoth.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Behemoth Tenderloin, Hulldagh Nutmeg, and Smoking Wood</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
                         <span class = "item_name">Smoked Behemoth</span>
-                        <span class = "ingredients">Behemoth Tenderloin, Hulldagh Nutmeg, and Smoking Wood</span>
-                        <span class = "cost">? Gil </span>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Spicy_Long-Bone_Rib_Steak.png">
-                    <figcaption>
-                        <span class = "item_name">Spicy Long-Bone Rib Steak (Spicy Bone-In Steak)</span>
-                        <span class = "ingredients">Dualhorn Steak with Leiden Pepper</span>
-                        <span class = "cost">? Gil </span>>
-                    </figcaption>
-                </figure>
+                        <figcaption>
+                            <span class = "item_name">Smoked Behemoth</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Behemoth Tenderloin, Hulldagh Nutmeg, and Smoking Wood</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class ="menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Spicy_Long-Bone_Rib_Steak.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Dualhorn Steak with Leiden Pepper</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
+                        <span class = "item_name">Spicy Long-Bone Rib Steak</span>
+                        <figcaption>
+                            <span class = "item_name">Spicy Long-Bone Rib Steak</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Dualhorn Steak with Leiden Pepper</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </div>
             </section>
 
             <section>
                 <h4>Seafood</h4>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Ace_Hunters_Schnitzel.png">
-                    <figcaption>
-                        <span class = "item_name">Ace Hunter's Schnitzel (Veteran Fisherman's Schnitzel)</span>
-                        <span class = "ingredients">Bulette Shank, Leiden Potato, with Cleigne Wheat</span>
-                        <span class = "cost">? Gil </span>>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Fishermans_Favorite_Paella.png">
-                    <figcaption>
-                        <span class = "item_name">Fisherman's Favorite Paella (Original Recipe Seafood Risotto)</span>
-                        <span class = "ingredients">Cleigne Mollusk,  Caem Pinkshrimp, and Saxham Rice</span>
-                        <span class = "cost">? Gil </span>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Fishsticks_on_Sticks.png">
-                    <figcaption>
-                        <span class = "item_name">Fishsticks on Sticks (Migratory Fish Kushikatsu)</span>
-                        <span class = "ingredients">Sea Bass Fillet and Cleigne Wheat</span>
-                        <span class = "cost">? Gil </span>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Sweet_Saltwater_Crustacean_Curry.png">
-                    <figcaption>
-                        <span class = "item_name">Sweet Saltwater Crustacean Curry (River and Sea Sweet and Salty Crab Curry)</span>
-                        <span class = "ingredients">Shieldshears Claw, Cygillan Crab, and Sweet Pepper</span>
-                        <span class = "cost">? Gil </span>
-                    </figcaption>
-                </figure>
+                <div class = "menu_items_container">
+                    
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Ace_Hunters_Schnitzel.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Bulette Shank, Leiden Potato, with Cleigne Wheat</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
+                        <span class = "item_name">Ace Hunter's Schnitzel </span>
+                        <figcaption>
+                            <span class = "item_name">Ace Hunter's Schnitzel (Veteran Fisherman's Schnitzel)</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Bulette Shank, Leiden Potato, with Cleigne Wheat</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Fishermans_Favorite_Paella.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Cleigne Mollusk,  Caem Pinkshrimp, and Saxham Rice</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
+                        <span class = "item_name">Fisherman's Favorite Paella</span>
+                        <figcaption>
+                            <span class = "item_name">Fisherman's Favorite Paella (Original Recipe Seafood Risotto)</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Cleigne Mollusk,  Caem Pinkshrimp, and Saxham Rice</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Fishsticks_on_Sticks.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Sea Bass Fillet and Cleigne Wheat</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
+                        <span class = "item_name">Fishsticks on Sticks</span>
+                        <figcaption>
+                            <span class = "item_name">Fishsticks on Sticks (Migratory Fish Kushikatsu)</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Sea Bass Fillet and Cleigne Wheat</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Sweet_Saltwater_Crustacean_Curry.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Shieldshears Claw, Cygillan Crab, and Sweet Pepper</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
+                        <span class = "item_name">Sweet Saltwater Crustacean Curry</span>
+                        <figcaption>
+                            <span class = "item_name">Sweet Saltwater Crustacean Curry (River and Sea Sweet and Salty Crab Curry)</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Shieldshears Claw, Cygillan Crab, and Sweet Pepper</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </div>    
             </section>
 
             <section>
                 <h4>Kids</h4>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Crispy_Cheese_Pizza.png">
-                    <figcaption>
-                        <span class = "item_name">Crispy Cheese Pizza (Browned Cheese Pizza)</span>
-                        <span class = "ingredients">Cheese</span>
-                        <span class = "cost">? Gil </span>>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Cup_Noodles.png">
-                    <figcaption>
+                <div class = "menu_items_container">
+
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Crispy_Cheese_Pizza.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Cheese</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
+                        <span class = "item_name">Crispy Cheese Pizza</span>
+                        <figcaption>
+                            <span class = "item_name">Crispy Cheese Pizza (Browned Cheese Pizza)</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Cheese</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Cup_Noodles.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Glimmering Zu Egg</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
                         <span class = "item_name">Cup Noodles (Glimmering Zu Egg)</span>
-                        <span class = "ingredients">Glimmering Zu Egg</span>
-                        <span class = "cost">? Gil </span>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Moogle-Mousse-with-Kupoberry-Sauce.png">
-                    <figcaption>
+                        <figcaption>
+                            <span class = "item_name">Cup Noodles (Glimmering Zu Egg)</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Glimmering Zu Egg</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Moogle-Mousse-with-Kupoberry-Sauce.png">
+                        <div class ="mobile_menu_details">
+                            <span class = "ingredients">Ulwaat Berries, Sheep Milk, and Leiden Sweet Potato</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
                         <span class = "item_name">Moogle Mousse with Kupoberry Sauce</span>
-                        <span class = "ingredients">Ulwaat Berries, Sheep Milk, and Leiden Sweet Potato</span>
-                        <span class = "cost">? Gil </span>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Dish_and_Chips.png">
-                    <figcaption>
+                        <figcaption>
+                            <span class = "item_name">Moogle Mousse with Kupoberry Sauce</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Ulwaat Berries, Sheep Milk, and Leiden Sweet Potato</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Dish_and_Chips.png">
+                        <div class = "mobile_menu_details">
+                            <span class = "ingredients">Leiden Potato</span>
+                            <span class = "cost">? Gil </span>
+                        </div>
                         <span class = "item_name">Dish and Chips</span>
-                        <span class = "ingredients">Leiden Potato</span>
-                        <span class = "cost">? Gil </span>
-                    </figcaption>
-                </figure>
-            </section> -->
+                        <figcaption>
+                            <span class = "item_name">Dish and Chips</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Leiden Potato</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+            </section>
         </div>
 
-        <div id = "none">
-            <div>
-                <form>
-                    <fieldset>
-                        <legend>Contact Us</legend>
-                        <label for = "name">Name: </label>
-                        <input type = "text" id = "name" name = "name" required>
-                        <label for = "mail">Email: </label>
-                        <input type = "email" id = "mail" name = "name" required>
-                        <label for = "subject">Subject: </label>
-                        <input type = "text" id = "subject" name = "subject" required>
-                        <label for = "comment">Comment: </label>
-                        <textarea id = "comment" name = "comment" rows = "10" cols = "30" required></textarea>
-                        <input type = "submit" value = "Send">
-                    </fieldset>
-                </form>
+        
+        <div id = "form_container">
+            <div id = "contact_us">
+                <h2>Contact us</h2>
             </div>
+            <form>
+                <fieldset>
+                    <div id = "form_name">
+                        <label for = "name">Name </label>
+                        <input type = "text" id = "name" name = "name" required>
+                    </div>
+                    <div id = "form_email">
+                        <label for = "mail">Email </label>
+                        <input type = "email" id = "mail" name = "name" required>
+                    </div>
+                    <div id = "form_subject">
+                        <label for = "subject">Subject </label>
+                        <input type = "text" id = "subject" name = "subject" required>
+                    </div>
+                    <label for = "comment">Comment </label>
+                    <textarea id = "comment" name = "comment" rows = "10" cols = "30" required></textarea>
+                    <input type = "submit" value = "Send" id = "sub_button">
+                </fieldset>
+            </form>
+        </div>
         
 
         

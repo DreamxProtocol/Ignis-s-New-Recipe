@@ -14,12 +14,20 @@ header{
     flex-direction: column;
     align-items: center;
     border: solid black 1px;
+    background-color: rgb(121, 187, 209);
     margin: 0 auto;
     width: 100vw;
-    background-color: rgb(121, 187, 209);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-/* ham and nav to the right */
+/* restaurant name */
+h1{
+    margin-top: 2%;
+}
+
+/* ham and nav to the left */
 #ham_icon, #navv{
     align-self: flex-start;
     margin-left: 5px;
@@ -35,14 +43,9 @@ header{
     font-weight: bold;
 }
 
-/* restaurant name */
-h1{
-    margin-top: 2%;
-}
-
 #navv{
     position: absolute;
-    top: 14.5%;
+    top: 100%;
     list-style:none;
     display: none;
     border: solid black 1px;
@@ -57,6 +60,7 @@ h1{
     text-align: center;
 }
 
+/* nav buttons */
 button{
     border: none;
     background: rgba(181, 150, 96, .60) ;
@@ -64,13 +68,13 @@ button{
     height: 40px;
 }
 
+/* giant home container, containing everything */
 #home_container{
     border:solid black 1px;
     margin: 2% auto 0;
     width: 95vw;
     height: 82vh;
     background-color: rgb(139, 117, 79);
-    display: none;
 }
 
 main{
@@ -99,12 +103,13 @@ h2{
     background-color: rgb(223, 205, 184); 
 }
 
-/* featured items to be viewed "next"/"previous"... deserts */
+/* featured items (pics & descriptions) to be viewed "next"/"previous"... deserts */
 .featured_items{
     display:none;
     margin: 5% auto 0;
 }
 
+/* "on" featured pic when visiting */
 .active{
     display:block;
 }
@@ -127,6 +132,7 @@ h2{
     width: 55%;
     margin: 0 auto;
     background-color: rgb(215, 210, 204);  
+    display: block;
 }
 
 /* circles underneath the featured items that allow you to change item */
@@ -145,68 +151,211 @@ h2{
     background-color: rgb(178, 194, 199);
 }
 
-/* container for the entire menu */
+/* container for the food, entire menu */
 #menu_container{
-    margin: 2% auto 0;
     border:solid black 1px;
+    margin: 2% auto 0;
+    width: 95vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: rgb(139, 117, 79);
 }
 
 #menu_text{
     text-align: center;
 }
 
-/* sections for type of food along with the menu items Ex. kids, desert, etc. */
+/* sections for type of food, followed by its 4 items */
 section{
     border: solid blueviolet 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 95%;
     height: 75vh;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(223, 205, 184);
 }
 
 /* container for ALL menu items only to seperate it from <h4>food type</h4> */
 .menu_items_container{
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border: solid yellow 2px;
-    width: 98%;
+    /* border: solid yellow 2px; */
+    width: 100%;
     height: 98%;
-
-
 }
 
 /* individual menu items */
 .menu_items{
-    border: solid black 1px;
+    /* border: solid black 1px; */
     width: 50%;
-    height: 45%;
-    /* margin-left: 5%; */
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .menu_pic{
-    width: 70%;
-    height: 70%;
+    width: 95%;
+    height: 65%;
+    margin-bottom: 15%;
+    border: solid rgb(143, 130, 116) 5px;
 }
+
+.item_name{
+    text-align: center;
+    border:solid black 1px;
+    position: absolute;
+    margin-top: 40%;
+    width: 40%;
+    background-color: rgb(178, 194, 199);
+}
+
+/* details that appear when "hovering" over food pics
+hovering will not be required in desktop */
+.mobile_menu_details{  
+    width: 40%;
+    margin-bottom: 5%;
+    padding: 5px ;
+    text-align: center;
+    border:solid black 1px;
+    position: absolute;
+    display: none;
+    background-color: rgba(178, 194, 199, .85);
+}
+
+.menu_pic:hover ~ .mobile_menu_details{
+    display: block;
+}
+
+.mobile_menu_details:hover{
+    display: block;
+}
+
+.cost{
+    display: block;
+}
+
+/* the container for the entire form */
+#form_container{
+
+    width: 95vw;
+    height: 82vh;
+    margin: 2% auto 0;
+    border: solid black 1px;
+    background-color: rgb(139, 117, 79);
+    
+}
+
+#contact_us{
+
+    border:solid black 1px;
+    margin: 2% auto 0;
+    width: 45%;
+    background-color: rgb(240, 214, 184);
+    
+}
+
+form{
+
+    margin: 5% auto 0 ;
+    width: 95%;
+    height: 82%;
+    text-align: center;
+    background-color: rgb(240, 214, 184);
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+fieldset{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    padding-top: 10px;
+    border: solid rgb(143, 130, 116) 5px;
+    height: 95%;
+    width: 90%;
+    background-color: rgb(240, 214, 184);
+
+}
+
+#form_name, #form_email, #form_subject{
+    /* border: solid black 1px; */
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+#form_subject{
+
+    margin-bottom: 2%;
+
+}
+
+
+input{
+    width: 75%;
+}
+
+#comment{
+
+    width: 85%;
+
+}
+
+#sub_button{
+
+    margin-top: 2%;
+    width: 35%;
+
+}
+
+
+
+
 
 figcaption{
     text-align: center;
-}
-
-
-
-
-
-#none, .desktop_menu{
+    border: solid black 1px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
     display:none;
 }
+ 
+.desktop_menu_details{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

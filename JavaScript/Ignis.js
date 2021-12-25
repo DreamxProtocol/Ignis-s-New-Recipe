@@ -1,10 +1,46 @@
-function toggle() {
+function nav_toggle() {
     const x = document.getElementById("navv");
     if (x.style.display === "block"){
         x.style.display = "none";
     } else{
         x.style.display = "block";
     }
+}
+
+function home_on() {
+    const home = document.getElementById("home_container");
+    const menu = document.getElementById("menu_container");
+    const form = document.getElementById("form_container");
+    const nav = document.getElementById("navv");
+
+    home.style.display = "block";
+    menu.style.display = "none";
+    form.style.display = "none";
+    nav.style.display = "none";
+}
+
+function menu_on() {
+    const home = document.getElementById("home_container");
+    const menu = document.getElementById("menu_container");
+    const form = document.getElementById("form_container");
+    const nav = document.getElementById("navv");
+
+    home.style.display = "none";
+    menu.style.display = "flex";
+    form.style.display = "none";
+    nav.style.display = "none";
+}
+
+function form_on() {
+    const home = document.getElementById("home_container");
+    const menu = document.getElementById("menu_container");
+    const form = document.getElementById("form_container");
+    const nav = document.getElementById("navv");
+
+    home.style.display = "none";
+    menu.style.display = "none";
+    form.style.display = "block";
+    nav.style.display = "none";
 }
 
 function firstItem() {
@@ -37,11 +73,6 @@ function thirdItem() {
     third.style.display = "block";
 }
 
-function con() {
-
-    console.log("hey");
-
-}
 
 
 
