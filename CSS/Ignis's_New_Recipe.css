@@ -217,30 +217,54 @@ section{
     background-color: rgb(178, 194, 199);
 }
 
+
+
+
+
 /* details that appear when "hovering" over food pics
 hovering will not be required in desktop */
 .mobile_menu_details{  
-    width: 40%;
-    margin-bottom: 5%;
-    padding: 5px ;
+    margin-bottom: 6%;
+    padding: 1%, 1%, 1%, 1% ;
     text-align: center;
-    border:solid black 1px;
+    /* border:solid black 1px; */
     position: absolute;
-    display: none;
-    background-color: rgba(178, 194, 199, .85);
-}
-
-.menu_pic:hover ~ .mobile_menu_details{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 20%;
+    background-color: none;
+    font-size: 0;
+    transition-property:font-size, background-color;
+    transition-duration: 1s;
 }
 
 .mobile_menu_details:hover{
-    display: block;
+    background-color: rgba(178, 194, 199, .85);
+    font-size: 1rem;
 }
 
-.cost{
-    display: block;
+.contains, .ingredients, .cost{
+
+    margin-top: 5%;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* the container for the entire form */
 #form_container{
@@ -333,9 +357,12 @@ figcaption{
     flex-direction: column;
     display:none;
 }
- 
+
+
 .desktop_menu_details{
-    display:none;
+
+    display: none;
+
 }
 
 
