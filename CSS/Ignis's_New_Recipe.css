@@ -5,26 +5,15 @@
 }
 
 html{
-
+    font-size: 1.2rem;
 }
 
-/* contains the restaurant name and nav */
-header{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid black 1px;
-    background-color: rgb(121, 187, 209);
-    margin: 0 auto;
-    width: 100vw;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+.item_name, .featured_item_name{
+    font-size: .875rem;
 }
 
 /* welcome screen that appears only at the beginning of mobile view */
 #welcome_page{
-
     width: 95vw;
     height: 95vh;
     position: absolute;
@@ -37,7 +26,6 @@ header{
 }
 
 #welcome_message_container{
-
     border: solid white 5px;
     background-color: white;
     border-radius: 50%;
@@ -49,25 +37,21 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 #enter_button{
-
     width:45%;
     height: 25%;
     margin-top: 5px;
-
 }
 
 #welcome_message{
-   
     text-align: center;
     font-size: 1.5rem;
-
 }
 
+/* clouds */
 .circle{
     position: absolute;
     border: solid white 5px;
@@ -75,6 +59,7 @@ header{
     border-radius: 50%;
 }
 
+/* small cloud and so on */
 .small{
     top: 26%;
     right: 65%;
@@ -97,9 +82,23 @@ header{
 
 }
 
-
-
-
+/* contains the restaurant name and nav */
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 1px;
+    background-color: rgb(121, 187, 209);
+    margin: 0 auto;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-image: url(C:/Users/Marsea/Desktop/Ignis%27s%20New%20Recipe/Color_References/Altissia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
 
 /* restaurant name */
 h1{
@@ -143,7 +142,7 @@ h1{
     text-align: center;
 }
 
-/* nav buttons */
+ /* nav buttons .."fake" links */
 button{
     border: none;
     background: rgba(181, 150, 96, .60) ;
@@ -160,6 +159,7 @@ button{
     background-color: rgb(139, 117, 79);
 }
 
+/* container for catchy quote */
 main{
     border:solid black 1px;
     margin: 2% auto 0;
@@ -204,7 +204,8 @@ h2{
     border: solid rgb(143, 130, 116) 5px;
 }
 
-/* because the first featured pic is smaller than the rest */
+/* because the first featured pic 
+is smaller than the rest..increasing it */
 #orange_cake{
     height: 93%;
 }
@@ -218,14 +219,16 @@ h2{
     display: block;
 }
 
-/* circles underneath the featured items that allow you to change item */
+/* circles underneath the featured items 
+that allow you to change item */
 #switchers{
     width:50%;
     display: flex;
     justify-content: space-between;
+    margin-top: 5%;
 }
 
-/* circles */
+/* circles or switches */
 #left, #right, #middle{
     border:solid black 1px;
     width:20px;
@@ -268,14 +271,12 @@ section{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    /* border: solid yellow 2px; */
     width: 100%;
     height: 98%;
 }
 
 /* individual menu items */
 .menu_items{
-    /* border: solid black 1px; */
     width: 50%;
     height: 50%;
     display: flex;
@@ -291,26 +292,27 @@ section{
     border: solid rgb(143, 130, 116) 5px;
 }
 
+/* names under the pics... featured items have
+a different class */
 .item_name{
     text-align: center;
-    border:solid black 1px;
-    position: absolute;
-    margin-top: 40%;
-    width: 40%;
     background-color: rgb(178, 194, 199);
+    border: solid black 1px;;
+    width: 90%; 
 }
 
-
-
-
+/* for some of the pictures that are
+not aligned because the text is too much? */
+.text_big{
+    margin-top: -11%;
+}
 
 /* details that appear when "hovering" over food pics
 hovering will not be required in desktop */
 .mobile_menu_details{  
-    margin-bottom: 6%;
+    margin-bottom: 18%;
     padding: 1%, 1%, 1%, 1% ;
     text-align: center;
-    /* border:solid black 1px; */
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -323,54 +325,42 @@ hovering will not be required in desktop */
     transition-duration: 1s;
 }
 
+/* some of the mobile menu details are floating
+above the pics so bring down the margin for those
+few */
+.small_margin{
+    margin-bottom: 13%;
+}
+
 .mobile_menu_details:hover{
     background-color: rgba(178, 194, 199, .85);
-    font-size: 1rem;
+    font-size: 85%;
 }
 
-.contains, .ingredients, .cost{
-
+/* the individual divs inside the mobile menu
+details  */
+.cost{
     margin-top: 5%;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* the container for the entire form */
 #form_container{
-
     width: 95vw;
     height: 82vh;
     margin: 2% auto 0;
     border: solid black 1px;
-    background-color: rgb(139, 117, 79);
-    
+    background-color: rgb(139, 117, 79);  
 }
 
 #contact_us{
-
     border:solid black 1px;
     margin: 2% auto 0;
     width: 45%;
-    background-color: rgb(240, 214, 184);
-    
+    background-color: rgb(240, 214, 184);   
 }
 
+/* holds the fieldset */
 form{
-
     margin: 5% auto 0 ;
     width: 95%;
     height: 82%;
@@ -378,12 +368,10 @@ form{
     background-color: rgb(240, 214, 184);
     display: flex;
     justify-content: center;
-    
-
 }
 
+/* holds inside the items asking for info */
 fieldset{
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -393,40 +381,39 @@ fieldset{
     height: 95%;
     width: 90%;
     background-color: rgb(240, 214, 184);
-
 }
 
+/* three pairs, containing the label and its input
+just above the comment section */
 #form_name, #form_email, #form_subject{
-    /* border: solid black 1px; */
     width: 85%;
     display: flex;
     justify-content: space-between;
     margin-top: 2%;
 }
 
-#form_subject{
-
-    margin-bottom: 2%;
-
+input{
+    width: 70%;
 }
 
-
-input{
-    width: 75%;
+#form_subject{
+    margin-bottom: 2%;
 }
 
 #comment{
-
     width: 85%;
-
 }
 
 #sub_button{
-
     margin-top: 2%;
     width: 35%;
-
 }
+
+
+
+
+
+
 
 
 
@@ -442,7 +429,7 @@ figcaption{
 }
 
 
-.desktop_menu_details, #menu_container, #form_container{
+.desktop_menu_details, #menu_container, #home_container, #welcome_page{
 
     display: none;
 

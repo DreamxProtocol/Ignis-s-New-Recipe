@@ -73,6 +73,15 @@ function thirdItem() {
     third.style.display = "block";
 }
 
+function enter() {
+
+const welcomePage = document.getElementById("welcome_page");
+
+welcomePage.style.display = "none"
+
+
+}
+
 
 
 
