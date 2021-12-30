@@ -25,9 +25,14 @@
         <h1>Ignis's New Recipe</h1>
         <label onclick="nav_toggle()" id = "ham_icon">&#9776;</label>
         <ul id = "navv">
-            <li class = "nav_decor"><button onclick="home_on()">Home</button></li>
-            <li class = "nav_decor"><button onclick="menu_on()">Menu</button></li>
-            <li class = "nav_decor"><button onclick="form_on()">Contact Us</button></li>
+            <li class = "nav_decor home_decor"><button class = desk_nav_decor onclick="home_on()">Home</button></li>
+            <li class = "nav_decor"><button class = desk_nav_decor onclick="menu_on()">Menu</button></li>
+            <li class = "nav_decor"><button class = desk_nav_decor onclick="form_on()">Contact Us</button></li>
+        </ul>
+        <ul id = "navv_desk">
+            <li class = "nav_decor home_decor"><button class = desk_nav_decor onclick="home_on()">Home</button></li>
+            <li class = "nav_decor"><button class = desk_nav_decor onclick="menu_on()">Menu</button></li>
+            <li class = "nav_decor"><button class = desk_nav_decor onclick="form_on()">Contact Us</button></li>
         </ul>
     </header>
 
@@ -78,7 +83,7 @@
 
                     <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Sandwich\Grease_Monkey_Schnitzel_Sandwich.png">
-                        <div class = "mobile_menu_details">
+                        <div class = "mobile_menu_details big_margin">
                             <span class = "ingredients">Garula Sirloin with Cleigne Wheat</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
@@ -93,8 +98,8 @@
                     </figure>
 
                     <figure class = "menu_items">
-                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Sandwich\Stacked_Ham_Sandwich.png">
-                        <div class = "mobile_menu_details">
+                        <img class = "menu_pic big_px_more_pic_margin" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Sandwich\Stacked_Ham_Sandwich.png">
+                        <div class = "mobile_menu_details big_margin">
                             <span class = "ingredients">Garula Sirloin, Fine Gighee Ham, and Aegir Root</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
@@ -110,7 +115,7 @@
 
                     <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Sandwich\Cannedwich.png">
-                        <div class = "mobile_menu_details small_margin">
+                        <div class = "mobile_menu_details">
                             <span class = "ingredients">Luncheon Meat with Cleigne Wheat</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
@@ -125,12 +130,12 @@
                     </figure>
 
                     <figure class = "menu_items">
-                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Sandwich\Multi-Meat_Sandwich.png">
-                        <div class = "mobile_menu_details small_margin">
+                        <img class = "menu_pic low_px_less_pic_margin" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Sandwich\Multi-Meat_Sandwich.png">
+                        <div class = "mobile_menu_details">
                             <span class = "ingredients">Daggerquill Breast, Gighee Ham, and Aegir Root</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
-                        <span class = "item_name text_big">Multi-Meat Sandwich</span>
+                        <span class = "item_name">Multi-Meat Sandwich</span>
                         <figcaption>
                             <span class = "item_name">Multi-Meat Sandwich</span>
                             <div class = "desktop_menu_details">
@@ -148,8 +153,8 @@
                 <div class = "menu_items_container">
 
                     <figure class = "menu_items">
-                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Thick_Juicy_Steak.png">
-                        <div class = "mobile_menu_details small_margin">
+                        <img class = "menu_pic low_px_more_pic_margin" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Thick_Juicy_Steak.png">
+                        <div class = "mobile_menu_details low_px_more_detail_margin">
                             <span class = "ingredients">Catoblepas Brisket wtih Kettier Ginger</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
@@ -163,9 +168,25 @@
                         </figcaption>
                     </figure>
 
+                    <figure class ="menu_items">
+                        <img class = "menu_pic pic_margin" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Spicy_Long-Bone_Rib_Steak.png">
+                        <div class = "mobile_menu_details low_px_more_detail_margin">
+                            <span class = "ingredients">Dualhorn Steak with Leiden Pepper</span>
+                            <span class = "cost">Costs: ? Gil </span>
+                        </div>
+                        <span class = "item_name">Spicy Long-Bone Rib Steak</span>
+                        <figcaption>
+                            <span class = "item_name">Spicy Long-Bone Rib Steak</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Dualhorn Steak with Leiden Pepper</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
                     <figure class = "menu_items">
-                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Smoked_Behemoth.png">
-                        <div class = "mobile_menu_details small_margin">
+                        <img class = "menu_pic low_px_more_pic_margin" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Smoked_Behemoth.png">
+                        <div class = "mobile_menu_details low_px_more_detail_margin">
                             <span class = "ingredients">Behemoth Tenderloin, Hulldagh Nutmeg, and Smoking Wood</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
@@ -180,8 +201,8 @@
                     </figure>
 
                     <figure class = "menu_items">
-                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Pit-Crews-Meat-Wraps.png">
-                        <div class = "mobile_menu_details">
+                        <img class = "menu_pic medium_px_less_pic_margin" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Pit-Crews-Meat-Wraps.png">
+                        <div class = "mobile_menu_details low_px_more_detail_margin ">
                             <span class = "ingredients">Bulette Shank, Killer Tomato, and Sweet Pepper</span>
                             <span class = "cost">Costs: ? Gil</span>
                         </div>
@@ -195,21 +216,7 @@
                         </figcaption>
                     </figure>
 
-                    <figure class ="menu_items">
-                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Meats\Spicy_Long-Bone_Rib_Steak.png">
-                        <div class = "mobile_menu_details">
-                            <span class = "ingredients">Dualhorn Steak with Leiden Pepper</span>
-                            <span class = "cost">Costs: ? Gil </span>
-                        </div>
-                        <span class = "item_name">Spicy Long-Bone Rib Steak</span>
-                        <figcaption>
-                            <span class = "item_name">Spicy Long-Bone Rib Steak</span>
-                            <div class = "desktop_menu_details">
-                                <span class = "ingredients">Dualhorn Steak with Leiden Pepper</span>
-                                <span class = "cost">? Gil </span>
-                            </div>
-                        </figcaption>
-                    </figure>
+                    
 
                 </div>
             </section>
@@ -219,8 +226,8 @@
                 <div class = "menu_items_container">
                     
                     <figure class = "menu_items">
-                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Ace_Hunters_Schnitzel.png">
-                        <div class = "mobile_menu_details">
+                        <img class = "menu_pic medium_px_less_pic_margin" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Ace_Hunters_Schnitzel.png">
+                        <div class = "mobile_menu_details low_px_more_detail_margin">
                             <span class = "ingredients">Bulette Shank, Leiden Potato, and Cleigne Wheat</span>
                             <span class = "cost">Costs: ? Gil</span>
                         </div>
@@ -235,24 +242,8 @@
                     </figure>
 
                     <figure class = "menu_items">
-                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Fishermans_Favorite_Paella.png">
-                        <div class = "mobile_menu_details">
-                            <span class = "ingredients">Cleigne Mollusk,  Caem Pinkshrimp, and Saxham Rice</span>
-                            <span class = "cost">Costs: ? Gil </span>
-                        </div>
-                        <span class = "item_name">Fisherman's Favorite Paella</span>
-                        <figcaption>
-                            <span class = "item_name">Fisherman's Favorite Paella (Original Recipe Seafood Risotto)</span>
-                            <div class = "desktop_menu_details">
-                                <span class = "ingredients">Cleigne Mollusk,  Caem Pinkshrimp, and Saxham Rice</span>
-                                <span class = "cost">? Gil </span>
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure class = "menu_items">
-                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Fishsticks_on_Sticks.png">
-                        <div class = "mobile_menu_details small_margin">
+                        <img class = "menu_pic low_px_more_pic_margin" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Fishsticks_on_Sticks.png">
+                        <div class = "mobile_menu_details low_px_more_detail_margin">
                             <span class = "ingredients">Sea Bass Fillet with Cleigne Wheat</span>
                             <span class = "cost">Costs: ? Gil</span>
                         </div>
@@ -267,12 +258,28 @@
                     </figure>
 
                     <figure class = "menu_items">
+                        <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Fishermans_Favorite_Paella.png">
+                        <div class = "mobile_menu_details big_margin">
+                            <span class = "ingredients">Cleigne Mollusk,  Caem Pinkshrimp, and Saxham Rice</span>
+                            <span class = "cost">Costs: ? Gil </span>
+                        </div>
+                        <span class = "item_name">Fisherman's Favorite Paella</span>
+                        <figcaption>
+                            <span class = "item_name">Fisherman's Favorite Paella (Original Recipe Seafood Risotto)</span>
+                            <div class = "desktop_menu_details">
+                                <span class = "ingredients">Cleigne Mollusk,  Caem Pinkshrimp, and Saxham Rice</span>
+                                <span class = "cost">? Gil </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\SeaFood\Sweet_Saltwater_Crustacean_Curry.png">
-                        <div class = "mobile_menu_details small_margin">
+                        <div class = "mobile_menu_details big_margin">
                             <span class = "ingredients">Shieldshears Claw, Cygillan Crab, and Sweet Pepper</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
-                        <span class = "item_name text_big">Sweet Saltwater Crustacean Curry</span>
+                        <span class = "item_name">Sweet Saltwater Crustacean Curry</span>
                         <figcaption>
                             <span class = "item_name">Sweet Saltwater Crustacean Curry (River and Sea Sweet and Salty Crab Curry)</span>
                             <div class = "desktop_menu_details">
@@ -291,7 +298,7 @@
 
                     <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Crispy_Cheese_Pizza.png">
-                        <div class = "mobile_menu_details small_margin">
+                        <div class = "mobile_menu_details">
                             <span class = "ingredients">Cheese</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
@@ -307,7 +314,7 @@
 
                     <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Dish_and_Chips.png">
-                        <div class = "mobile_menu_details small_margin">
+                        <div class = "mobile_menu_details">
                             <span class = "ingredients">Leiden Potato</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
@@ -323,7 +330,7 @@
 
                     <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Moogle-Mousse-with-Kupoberry-Sauce.png">
-                        <div class ="mobile_menu_details">
+                        <div class ="mobile_menu_details big_margin">
                             <span class = "ingredients">Ulwaat Berries, Sheep Milk, and Leiden Sweet Potato</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
@@ -339,7 +346,7 @@
 
                     <figure class = "menu_items">
                         <img class = "menu_pic" src = "C:\Users\Marsea\Desktop\Ignis's New Recipe\Recipes\Kids\Cup_Noodles.png">
-                        <div class = "mobile_menu_details">
+                        <div class = "mobile_menu_details big_margin">
                             <span class = "ingredients">Glimmering Zu Egg</span>
                             <span class = "cost">Costs: ? Gil </span>
                         </div>
