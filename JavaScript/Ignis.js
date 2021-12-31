@@ -12,11 +12,17 @@ function home_on() {
     const menu = document.getElementById("menu_container");
     const form = document.getElementById("form_container");
     const nav = document.getElementById("navv");
+    // const message = document.getElementById("welcome_page");
+    // const welcome = document.getElementById("welcome_message");
+    // const assist = document.getElementById("assist_message");
 
     home.style.display = "block";
     menu.style.display = "none";
     form.style.display = "none";
     nav.style.display = "none";
+    // message.style.display = "inline-block"
+    // assist.style.display = "none"
+    // welcome.style.display = "block"
 }
 
 function menu_on() {
@@ -24,11 +30,15 @@ function menu_on() {
     const menu = document.getElementById("menu_container");
     const form = document.getElementById("form_container");
     const nav = document.getElementById("navv");
+    // const message = document.getElementById("welcome_page");
 
     home.style.display = "none";
     menu.style.display = "flex";
     form.style.display = "none";
     nav.style.display = "none";
+    // message.style.display = "none";
+    
+
 }
 
 function form_on() {
@@ -36,11 +46,17 @@ function form_on() {
     const menu = document.getElementById("menu_container");
     const form = document.getElementById("form_container");
     const nav = document.getElementById("navv");
+    // const message = document.getElementById("welcome_page");
+    // const welcome = document.getElementById("welcome_message")
+    // const assist = document.getElementById("assist_message")
 
     home.style.display = "none";
     menu.style.display = "none";
     form.style.display = "block";
     nav.style.display = "none";
+    // message.style.display = "inline-block"
+    // assist.style.display = "block"
+    // welcome.style.display = "none"
 }
 
 function firstItem() {

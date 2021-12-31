@@ -12,6 +12,12 @@ html{
     font-size: .875rem;
 }
 
+#assist_message{
+
+    display: none;
+
+}
+
 /* welcome screen that appears only at the beginning of mobile view */
 #welcome_page{
     width: 95vw;
@@ -20,16 +26,26 @@ html{
     z-index: 3;
     top: 3%;
     left: 2.5%;
-    background-color: rgba(146, 33, 33, .75);
-    background-image: url(C:/Users/Marsea/Desktop/Ignis%27s%20New%20Recipe/Color_References/Ignis.cool.3.png);
-    background-repeat: no-repeat;
+    background-color: rgba(146, 33, 33, .75); */
+    /* background-image: url(C:/Users/Marsea/Desktop/Ignis%27s%20New%20Recipe/Color_References/Ignis.cool.3.png);
+    background-repeat: no-repeat;  */
 }
 
+#ignis{
+    margin-top: 15%;
+    width: 80%;
+    height: 90%;
+
+}
+
+
+
+
 #welcome_message_container{
-    border: solid white 5px;
+    border: solid white 1px;
     background-color: white;
     border-radius: 50%;
-    position: absolute;
+    position: absolute; 
     top: 1%;
     right: 1%;
     width: 45%;
@@ -51,7 +67,7 @@ html{
     font-size: 1.1rem;
 }
 
-/* clouds */
+ /* clouds  */
 .circle{
     position: absolute;
     border: solid white 5px;
@@ -59,7 +75,7 @@ html{
     border-radius: 50%;
 }
 
-/* small cloud and so on */
+ /* small cloud and so on  */
 .small{
     top: 26%;
     right: 65%;
@@ -80,7 +96,12 @@ html{
     width: 8%;
     height: 6%;
 
-}
+} 
+
+
+
+
+
 
 /* contains the restaurant name and nav */
 header{
@@ -179,9 +200,10 @@ main{
 }
  
 /* catchy quote? */
-h2{
+h2, #featured_soon{
     text-align: center;
 }
+
 
 /* container for featured items */
 #featured_container{
@@ -191,9 +213,10 @@ h2{
     justify-content: space-between;
     border:solid black 1px;
     height:77%;
-    margin: 5% auto 0;
-    padding: 10px 0 10px 0;
     width: 90%;
+    margin: 5% auto;
+    padding: 10px 0 10px 0;
+    
     background-color: rgb(223, 205, 184); 
 }
 
@@ -379,9 +402,9 @@ details  */
 form{
     margin: 5% auto 0 ;
     width: 95%;
-    height: 82%;
+    /* height: 82%; */
     text-align: center;
-    background-color: rgb(240, 214, 184);
+    /* background-color: rgb(240, 214, 184); */
     display: flex;
     justify-content: center;
 }
@@ -391,9 +414,10 @@ fieldset{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2%;
-    padding-top: 10px;
-    border: solid rgb(143, 130, 116) 5px;
+    margin: 2% 0;
+    /* padding-top: 10px; */
+    padding: 5px 0;
+    border: solid black 1px;
     height: 95%;
     width: 90%;
     background-color: rgb(240, 214, 184);
@@ -439,9 +463,9 @@ input{
         width: 69%
     }
 
-    #welcome_message{
+    /* #welcome_message{
         font-size: 1.2rem;
-    }
+    } */
 
     /* Fishsticks on Sticks, Smoked Behemoth, Thick 'n' Juicy Steak
     (new margin situation compared to normal) */
@@ -471,9 +495,9 @@ input{
 }
 
 @media screen and (min-width: 357px) and (max-width: 371px){
-    #welcome_message{
+    /* #welcome_message{
         font-size: 1rem;
-    }
+    } */
 
     /* Pit Crew's Meat Wraps, Ace Hunter's Schnitzel*/
     .medium_px_less_pic_margin{
@@ -505,14 +529,28 @@ input{
 
 @media screen and (min-width: 445px){
 
+    html{
+        background-image: url(C:/Users/Marsea/Desktop/Ignis%27s%20New%20Recipe/Color_References/Altissia.jpg);
+        background-size: cover;
+        background-position-y: 25%;
+    }
+
     header{
-        background-image: none;
+        position: static;
+        background-image: none;  
+        width: 95vw;
+        margin-top: 1%;
+        position: static;
+    }
+
+    h1{
+        margin-top: 1%;
     }
 
     /* got rid of the hamburger icon and 
     broke apart the nav 
     new nav so that when it is clicked on
-    it remains*/
+    it remains (javascript gets rid of original nav)*/
     #navv_desk{
         display:block;
         position: static;
@@ -520,34 +558,139 @@ input{
         background: none;
         border: none;
         width: 100%;
-        padding: 0;
+        margin-top: 1%;
         display: flex;
         align-self: flex-end;
-        justify-content: flex-end;  
+        justify-content: space-between;  
         list-style:none;
+        /* border: solid green 2px; */
     }
     
     /* holds the desk_nav_decor */
     .nav_decor{
-        /* border: solid yellow 1px; */
+        /* border: solid yellow 5px; */
         margin: 0;
-        width: 20%;
+        width: 25%;
         border: none;
-    }
-
-    /* home "link" to move it far left
-    away from everything else */
-    .home_decor{
-        margin-right: 40%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .desk_nav_decor{
-        border: solid blue 1px;
+        /* border: solid blue 1px; */
         background: none;
-        width: 90%;
-        height: 20px;
+        width: 100%;
+        font-size: 1.1rem;
+        cursor: pointer;
+        text-align: center;
     }
 
+    .desk_nav_decor:hover{
+        background-color: green;
+    }
+
+    /* home "link" in nav to move it far left
+    away from everything else */
+    .home_decor{
+        margin-right: 25%;
+    }
+
+    #home_container{
+        width: 45%;
+        height: 82%;
+        float: right;
+        margin: 1% 5% 0 0;
+    }
+
+    #switchers{
+        cursor: pointer;
+    }
+
+    #welcome_container{
+
+        width: 40%;
+        height: 100%; 
+        margin: 1% 5% 0 0;
+        border: solid green 1px;
+
+    }
+
+    #ignis{
+        width: 60%;
+        height: 70%;
+    }
+
+     /* small cloud and so on  */
+.small{
+    top: 38%;
+    right: 86%;
+}
+
+.medium{
+
+    top:35%;
+    right: 83%;
+    width: 2%;
+    height: 4%;
+}
+
+.big{
+
+    top: 30%;
+    right: 78%;
+    width: 4%;
+    height: 8%;
+
+} 
+
+    /*
+    #assist_message{
+        display: none;
+    } 
+
+    
+
+    /* #welcome_message_container{
+        right: 2%;
+    } */
+
+
+
+
+
+
+    #form_container{
+
+        width: 45%;
+        height: 82%;
+        float: right;
+        margin: 1% 5% 0 0;
+
+
+    }
+
+    fieldset{
+
+        height:77%;
+        width: 94.5%;
+        margin: 5% auto 2% ;
+        padding-bottom: 15px;
+        
+
+
+    }
+
+    form{
+
+        margin: 0 auto;
+        padding-bottom: 20px;
+
+    }
+
+    
+
+
+    
 
 
 
@@ -559,7 +702,8 @@ input{
 
 
 
-    #welcome_page, #ham_icon, #navv {
+
+    #ham_icon, #navv, #enter_button, #welcome_page{
         display: none;
     }
 
@@ -602,7 +746,7 @@ figcaption{
 }
 
 
-.desktop_menu_details, #form_container, #menu_container{
+.desktop_menu_details, #menu_container, #form_container{
 
     display: none;
 
