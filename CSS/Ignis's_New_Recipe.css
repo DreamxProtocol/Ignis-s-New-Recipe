@@ -26,7 +26,7 @@ html{
     z-index: 3;
     top: 3%;
     left: 2.5%;
-    background-color: rgba(146, 33, 33, .75); */
+    background-color: rgba(146, 33, 33, .75); 
     /* background-image: url(C:/Users/Marsea/Desktop/Ignis%27s%20New%20Recipe/Color_References/Ignis.cool.3.png);
     background-repeat: no-repeat;  */
 }
@@ -271,6 +271,15 @@ that allow you to change item */
     background-color: rgb(178, 194, 199);
 }
 
+#menu_holder{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
 /* container for the food, entire menu */
 #menu_container{
     border:solid black 1px;
@@ -394,7 +403,7 @@ details  */
 #contact_us{
     border:solid black 1px;
     margin: 2% auto 0;
-    width: 45%;
+    width: 50%;
     background-color: rgb(240, 214, 184);   
 }
 
@@ -606,91 +615,83 @@ input{
         cursor: pointer;
     }
 
-    #welcome_container{
-
-        width: 40%;
-        height: 100%; 
-        margin: 1% 5% 0 0;
-        border: solid green 1px;
-
-    }
-
-    #ignis{
-        width: 60%;
-        height: 70%;
-    }
-
-     /* small cloud and so on  */
-.small{
-    top: 38%;
-    right: 86%;
-}
-
-.medium{
-
-    top:35%;
-    right: 83%;
-    width: 2%;
-    height: 4%;
-}
-
-.big{
-
-    top: 30%;
-    right: 78%;
-    width: 4%;
-    height: 8%;
-
-} 
-
-    /*
-    #assist_message{
-        display: none;
-    } 
-
-    
-
-    /* #welcome_message_container{
-        right: 2%;
-    } */
-
-
-
-
-
-
     #form_container{
-
         width: 45%;
         height: 82%;
         float: right;
         margin: 1% 5% 0 0;
-
-
     }
 
     fieldset{
-
         height:77%;
         width: 94.5%;
         margin: 5% auto 2% ;
         padding-bottom: 15px;
-        
-
-
     }
 
     form{
-
         margin: 0 auto;
         padding-bottom: 20px;
+    }
+
+    #menu_container{
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
 
     }
 
-    
+    section{
+
+        width: 45%;
+        height: 25%;
+        /* margin-right: 5%; */
 
 
-    
+    }
+
+    .desktop_menu_details{
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+
+    }
+
+    figcaption{
+        text-align: center;
+        border: solid black 1px;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* display:none; */
+    }
+
+    .item_name2{
+
+        text-align: center;
+        background-color: rgb(178, 194, 199);
+        border: solid black 1px;;
+        width: 95%; 
+
+
+
+    }
+
+    .item_name{
+
+        display: none;
+
+    }
+
+    .menu_pic{
+
+        margin-bottom: 0;
+
+    }
 
 
 
@@ -703,7 +704,14 @@ input{
 
 
 
-    #ham_icon, #navv, #enter_button, #welcome_page{
+
+
+
+
+
+
+
+    #ham_icon, #navv, #enter_button, #welcome_page,.mobile_menu_details {
         display: none;
     }
 
@@ -736,17 +744,10 @@ input{
 
 
 
-figcaption{
-    text-align: center;
-    border: solid black 1px;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    display:none;
-}
 
 
-.desktop_menu_details, #menu_container, #form_container{
+
+#menu_holder, #form_container{
 
     display: none;
 

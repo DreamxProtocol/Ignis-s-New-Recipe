@@ -9,7 +9,7 @@ function nav_toggle() {
 
 function home_on() {
     const home = document.getElementById("home_container");
-    const menu = document.getElementById("menu_container");
+    const menu = document.getElementById("menu_holder");
     const form = document.getElementById("form_container");
     const nav = document.getElementById("navv");
     // const message = document.getElementById("welcome_page");
@@ -27,7 +27,7 @@ function home_on() {
 
 function menu_on() {
     const home = document.getElementById("home_container");
-    const menu = document.getElementById("menu_container");
+    const menu = document.getElementById("menu_holder");
     const form = document.getElementById("form_container");
     const nav = document.getElementById("navv");
     // const message = document.getElementById("welcome_page");
@@ -43,7 +43,7 @@ function menu_on() {
 
 function form_on() {
     const home = document.getElementById("home_container");
-    const menu = document.getElementById("menu_container");
+    const menu = document.getElementById("menu_holder");
     const form = document.getElementById("form_container");
     const nav = document.getElementById("navv");
     // const message = document.getElementById("welcome_page");
