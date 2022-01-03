@@ -12,12 +12,6 @@ html{
     font-size: .875rem;
 }
 
-#assist_message{
-
-    display: none;
-
-}
-
 /* welcome screen that appears only at the beginning of mobile view */
 #welcome_page{
     width: 95vw;
@@ -272,10 +266,10 @@ that allow you to change item */
 }
 
 #menu_holder{
-
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+     
 }
 
 
@@ -458,23 +452,26 @@ input{
     width: 35%;
 }
 
+/* when you refresh or first enter the page, the form and menu 
+are missing... had to "display: none" because they are imaginary
+links  */
+#menu_holder, figcaption, #form_container{
+
+    display: none;
+
+}
+
 
 /* "low_px" means 336px-356px
 "medium_px" means 357px-371px
 372px-385px is "normal" (when making this)
 "big_px" means 386px-444px */
 
-
-
 @media screen and (min-width: 336px) and (max-width: 356px){
 
     .featured_food_name_container{
         width: 69%
     }
-
-    /* #welcome_message{
-        font-size: 1.2rem;
-    } */
 
     /* Fishsticks on Sticks, Smoked Behemoth, Thick 'n' Juicy Steak
     (new margin situation compared to normal) */
@@ -530,11 +527,6 @@ input{
     }
 
 }
-
-
-
-
-
 
 @media screen and (min-width: 445px){
 
@@ -634,124 +626,123 @@ input{
         padding-bottom: 20px;
     }
 
-    #menu_container{
+    /* 100vh here because everything else that uses a 
+    % when it comes to width and height needs a 
+    reference ... it could be 1vh if we wanted to*/
+    #menu_holder{
+        display: flex;
+        height: 100vh;
+    }
 
+    #menu_container{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
-
+    
     }
 
     section{
-
+        margin-top: 2%;
         width: 45%;
-        height: 25%;
-        /* margin-right: 5%; */
+        height: 45%;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        bottom: 100%;
+    }
+
+    #cover{
+        z-index: 2;
+        position: relative;
+        width: 95%;
+        height: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        
+    }
 
 
+
+    #menu_cover_left, #menu_cover_right{
+
+        
+        border: solid black 1px;
+        /* border-right: solid grey 10px; */
+        width: 49.5%;
+        background-color: brown;
+        box-shadow: none;
+        transition-duration: 2s;
+    }
+
+    #menu_cover_right{
+
+        box-shadow: inset -25px -15px 5px 50px grey;
+
+    }
+
+    #menu_cover_right:active{
+
+        transform-origin:  right;
+        transform: scaleX(10%) translateX(70%) ;
+    }
+
+    #menu_cover_left:active{
+
+        transform-origin:  left;
+        transform: scaleX(10%) translateX(-70%) ;
+
+    }
+
+    h4{
+
+        margin: 1% 0 2% 0;
     }
 
     .desktop_menu_details{
 
         display: flex;
         flex-direction: column;
-        margin-bottom: 5%;
+        width:100%;
+        
 
     }
 
     figcaption{
         text-align: center;
+        background-color: rgb(178, 194, 199);
         border: solid black 1px;
-        width: 75%;
+        margin: 2% 0;
+        width: 85%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 85%;
         /* display:none; */
     }
 
-    .item_name2{
+    .item_name2, .ingredients, .cost{
 
-        text-align: center;
-        background-color: rgb(178, 194, 199);
-        border: solid black 1px;;
-        width: 95%; 
-
-
-
+        margin-top: 1%;
     }
 
-    .item_name{
+    .item_name2, .cost{
+        font-weight:bold ;
+    }
 
-        display: none;
-
+    .ingredients, .cost{
+        font-style: italic;
     }
 
     .menu_pic{
-
         margin-bottom: 0;
-
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #ham_icon, #navv, #enter_button, #welcome_page,.mobile_menu_details {
+    .item_name, #ham_icon, #navv, #welcome_page, .mobile_menu_details, #home_container{
         display: none;
     }
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#menu_holder, #form_container{
-
-    display: none;
-
-}
 
 
 
