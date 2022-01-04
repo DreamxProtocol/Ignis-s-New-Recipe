@@ -91,12 +91,42 @@ function thirdItem() {
 
 function enter() {
 
-const welcomePage = document.getElementById("welcome_page");
+    const welcomePage = document.getElementById("welcome_page");
 
-welcomePage.style.display = "none"
+    welcomePage.style.display = "none";
 
 
 }
+
+
+
+
+let menu = true;
+
+function menu_toggle() {
+
+    menu = !menu;
+    
+
+    if (menu === false){
+
+        document.getElementById("menu_cover_left").classList.add("mc_left_transition");
+        document.getElementById("menu_cover_right").classList.add("mc_right_transition");
+        document.getElementById("menu_holder").classList.add("menu_flip");
+        
+
+    } else {
+
+        document.getElementById("menu_cover_left").classList.remove("mc_left_transition");
+        document.getElementById("menu_cover_right").classList.remove("mc_right_transition");
+        document.getElementById("menu_holder").classList.remove("menu_flip");
+        
+        
+    }
+
+}
+
+
 
 
 

@@ -632,6 +632,15 @@ links  */
     #menu_holder{
         display: flex;
         height: 100vh;
+        /* transform: rotateY(.5turn); */
+        transition-duration: 2s;
+        
+    }
+
+    .menu_flip{
+
+        transform: rotateY(1turn);
+
     }
 
     #menu_container{
@@ -647,7 +656,6 @@ links  */
         height: 45%;
         position: relative;
         z-index: 1;
-        display: inline-block;
         bottom: 100%;
     }
 
@@ -658,41 +666,48 @@ links  */
         height: 100%;
         display: inline-flex;
         justify-content: space-between;
-        
     }
 
-
-
-    #menu_cover_left, #menu_cover_right{
-
-        
+    #menu_cover_right, #menu_cover_left {  
         border: solid black 1px;
-        /* border-right: solid grey 10px; */
         width: 49.5%;
         background-color: brown;
-        box-shadow: none;
-        transition-duration: 2s;
+        transition-duration: 4s;
+        display: inline-flex; 
     }
 
     #menu_cover_right{
-
-        box-shadow: inset -25px -15px 5px 50px grey;
-
+        justify-content: flex-start;
+        box-shadow: inset 280px 10px 260px 0px lightskyblue;
     }
 
-    #menu_cover_right:active{
-
+    .mc_right_transition{
         transform-origin:  right;
-        transform: scaleX(10%) translateX(70%) ;
+        transform: scaleX(15%) translateX(-10%) rotateY(.30turn) ;    
     }
 
-    #menu_cover_left:active{
+    #menu_cover_left{
+        justify-content: flex-end;
+        box-shadow: inset -280px -10px 260px 0px lightskyblue;
+    }
 
+    .mc_left_transition{
         transform-origin:  left;
-        transform: scaleX(10%) translateX(-70%) ;
+        transform: scaleX(15%) translateX(10%) rotateY(.30turn);
+    }
+
+
+    .wrinkles{
+        width: .5%;
+        height: 100%;
+        border: solid black 1px;
+        display: inline-block;
 
     }
 
+
+
+    
     h4{
 
         margin: 1% 0 2% 0;
