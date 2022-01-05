@@ -21,19 +21,14 @@ html{
     top: 3%;
     left: 2.5%;
     background-color: rgba(146, 33, 33, .75); 
-    /* background-image: url(C:/Users/Marsea/Desktop/Ignis%27s%20New%20Recipe/Color_References/Ignis.cool.3.png);
-    background-repeat: no-repeat;  */
 }
 
+/* ignis pic for welcome page */
 #ignis{
     margin-top: 15%;
     width: 80%;
     height: 90%;
-
 }
-
-
-
 
 #welcome_message_container{
     border: solid white 1px;
@@ -76,7 +71,6 @@ html{
 }
 
 .medium{
-
     top:21%;
     right: 56%;
     width: 6%;
@@ -84,18 +78,11 @@ html{
 }
 
 .big{
-
     top: 16%;
     right: 47%;
     width: 8%;
     height: 6%;
-
 } 
-
-
-
-
-
 
 /* contains the restaurant name and nav */
 header{
@@ -118,6 +105,8 @@ header{
 /* restaurant name */
 h1{
     margin-top: 2%;
+    text-shadow: 0 0 20px lightskyblue;
+    background: #bce9e79c;
 }
 
 /* ham and nav to the left */
@@ -136,6 +125,8 @@ h1{
     font-weight: bold;
 }
 
+/* this appears when clicking on ham_icon
+its *inside ham_icon */
 #navv{
     position: absolute;
     top: 100%;
@@ -156,7 +147,7 @@ desktop view
 made seperately because couldn't
 figure out how to apply javascript to only the
 mobile view... so it was copied and remade,
-mobile view closing the nav, we want the nav to 
+mobile view closes the nav, we want the nav to 
 remain in desktop view */
 #navv_desk{
     display:none;
@@ -176,7 +167,7 @@ button{
     height: 40px;
 }
 
-/* giant home container, containing everything */
+/* giant home container, containing everything for home tab */
 #home_container{
     border:solid black 1px;
     margin: 2% auto 0;
@@ -198,8 +189,12 @@ h2, #featured_soon{
     text-align: center;
 }
 
+h2, #menu_text{
+    font-style: italic;
+}
 
-/* container for featured items */
+/* container for featured items 
+which displays in homepage only*/
 #featured_container{
     display: flex;
     flex-direction: column;
@@ -210,17 +205,21 @@ h2, #featured_soon{
     width: 90%;
     margin: 5% auto;
     padding: 10px 0 10px 0;
-    
     background-color: rgb(223, 205, 184); 
 }
 
-/* featured items (pics & descriptions) to be viewed "next"/"previous"... deserts */
+/* featured items (pics & descriptions) to be 
+viewed "next"/"previous"... deserts */
 .featured_items{
     display:none;
     margin: 5% auto 0;
 }
 
-/* "on" featured pic when visiting */
+.featured_item_name{
+    font-weight: bold;
+}
+
+/* "on" featured item when visiting */
 .active{
     display:block;
 }
@@ -265,14 +264,14 @@ that allow you to change item */
     background-color: rgb(178, 194, 199);
 }
 
+/* holds the menu container, made basically 
+just to align child elements  */
 #menu_holder{
     display: flex;
     flex-direction: column;
     align-items: center;
-     
+    margin-top: 1%; 
 }
-
-
 
 /* container for the food, entire menu */
 #menu_container{
@@ -287,6 +286,11 @@ that allow you to change item */
 
 #menu_text{
     text-align: center;
+    background: rgba(232, 235, 193, .85);
+    border: dotted black 1px;
+    box-shadow: 0 0 10px 5px black;
+    padding: .3% .5%;
+    margin: 1% 0;
 }
 
 /* sections for type of food, followed by its 4 items */
@@ -300,6 +304,12 @@ section{
     margin-bottom: 2%;
     padding-bottom: 2%;
     background-color: rgb(223, 205, 184);
+}
+
+/* menu categories, kids , meats... */
+h4{
+    font-size: 1.3rem;
+    margin-bottom: 1%;
 }
 
 /* container for ALL menu items only to seperate it from <h4>food type</h4> */
@@ -331,13 +341,13 @@ section{
 
 /* for some of the pictures that are
 not aligned because the text is too much? */
-/* low pic compared to normal margin */
+/* lower pic margin compared to normal margin */
 /* Spicy Long-Bone Rib Steak,  */
 .pic_margin{
     margin-bottom: 4%;
 }
 
-/* names under the pics... featured items have
+/* names under the pics... "featured items" have
 a different class */
 .item_name{
     text-align: center;
@@ -346,8 +356,17 @@ a different class */
     width: 95%; 
 }
 
+.ingredients, .cost{
+    font-style: italic;
+}
+
+.cost{
+    font-weight:bold ;
+}
+
 /* details that appear when "hovering" over food pics
-hovering will not be required in desktop */
+hovering will not be applied in desktop 
+different class for show details in desktop view*/
 .mobile_menu_details{  
     margin-bottom: 13%;
     padding: 1%, 1%, 1%, 1% ;
@@ -405,20 +424,17 @@ details  */
 form{
     margin: 5% auto 0 ;
     width: 95%;
-    /* height: 82%; */
     text-align: center;
-    /* background-color: rgb(240, 214, 184); */
     display: flex;
     justify-content: center;
 }
 
-/* holds inside the items asking for info */
+/* holds inside the items asking for info (input, label) */
 fieldset{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2% 0;
-    /* padding-top: 10px; */
     padding: 5px 0;
     border: solid black 1px;
     height: 95%;
@@ -427,12 +443,21 @@ fieldset{
 }
 
 /* three pairs, containing the label and its input
-just above the comment section */
+just above the comment section 
+both put into divs for allignments*/
 #form_name, #form_email, #form_subject{
     width: 85%;
     display: flex;
     justify-content: space-between;
     margin-top: 2%;
+}
+
+label, input{
+    font-weight: bold;
+}
+
+label{
+    margin-right: 5%;
 }
 
 input{
@@ -447,6 +472,7 @@ input{
     width: 85%;
 }
 
+/* submit button */
 #sub_button{
     margin-top: 2%;
     width: 35%;
@@ -584,10 +610,11 @@ links  */
         font-size: 1.1rem;
         cursor: pointer;
         text-align: center;
+        font-weight: bold;
     }
 
     .desk_nav_decor:hover{
-        background-color: green;
+        background-color: rgba(167, 213, 167, .80);
     }
 
     /* home "link" in nav to move it far left
@@ -601,6 +628,7 @@ links  */
         height: 82%;
         float: right;
         margin: 1% 5% 0 0;
+        
     }
 
     #switchers{
@@ -637,73 +665,43 @@ links  */
         
     }
 
+    #menu_text{
+
+        cursor: pointer;
+        margin: 1% 0 0 0 ;
+
+    }
+
+    #menu_text:hover{
+
+        background: yellow;
+    
+    }
+
     .menu_flip{
 
         transform: rotateY(1turn);
 
     }
 
-    #menu_container{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
     
-    }
 
     section{
         margin-top: 2%;
-        width: 45%;
+        
         height: 45%;
-        position: relative;
-        z-index: 1;
-        bottom: 100%;
+        
     }
 
-    #cover{
-        z-index: 2;
-        position: relative;
-        width: 95%;
-        height: 100%;
-        display: inline-flex;
-        justify-content: space-between;
+    
+
+    .menu_pic{
+        margin-bottom: 0;
     }
 
-    #menu_cover_right, #menu_cover_left {  
-        border: solid black 1px;
-        width: 49.5%;
-        background-color: brown;
-        transition-duration: 4s;
-        display: inline-flex; 
-    }
+    
 
-    #menu_cover_right{
-        justify-content: flex-start;
-        box-shadow: inset 280px 10px 260px 0px lightskyblue;
-    }
-
-    .mc_right_transition{
-        transform-origin:  right;
-        transform: scaleX(15%) translateX(-10%) rotateY(.30turn) ;    
-    }
-
-    #menu_cover_left{
-        justify-content: flex-end;
-        box-shadow: inset -280px -10px 260px 0px lightskyblue;
-    }
-
-    .mc_left_transition{
-        transform-origin:  left;
-        transform: scaleX(15%) translateX(10%) rotateY(.30turn);
-    }
-
-
-    .wrinkles{
-        width: .5%;
-        height: 100%;
-        border: solid black 1px;
-        display: inline-block;
-
-    }
+    
 
 
 
@@ -740,21 +738,164 @@ links  */
         margin-top: 1%;
     }
 
-    .item_name2, .cost{
+    .item_name2{
         font-weight:bold ;
     }
 
-    .ingredients, .cost{
-        font-style: italic;
+    .desk_moogle_figcaption{
+
+
+        font-size: 75%;
+        margin-bottom: -2%;
+
     }
 
-    .menu_pic{
-        margin-bottom: 0;
+    .desk_fisherman_figcaption{
+
+        margin-bottom: 15%;
+        font-size: 75%;
+
+
     }
 
-    .item_name, #ham_icon, #navv, #welcome_page, .mobile_menu_details, #home_container{
+    .desk_grease_figcaption{
+
+        font-size: 75%;
+        margin-bottom: -1%;
+
+    }
+    
+
+    
+
+    
+
+    .item_name, #ham_icon, #navv, #welcome_page, .mobile_menu_details, #menu_holder{
         display: none;
     }
+
+}
+
+@media screen and (min-width: 755 px){
+
+
+    #cover{
+        z-index: 2;
+        position: relative;
+        width: 95%;
+        height: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    
+    #menu_cover_right, #menu_cover_left {  
+        border: solid black 1px;
+        width: 49.5%;
+        background-color: brown;
+        transition-duration: 3s;
+        display: inline-flex; 
+    }
+    
+    #menu_cover_right{
+        justify-content: flex-start;
+        box-shadow: inset 280px 10px 260px 0px lightskyblue;
+    }
+    
+    .mc_right_transition{
+        transform-origin:  right;
+        transform: scaleX(15%) translateX(-10%) rotateY(.30turn) ;    
+    }
+    
+    #menu_cover_left{
+        justify-content: flex-end;
+        box-shadow: inset -280px -10px 260px 0px lightskyblue;
+    }
+    
+    .mc_left_transition{
+        transform-origin:  left;
+        transform: scaleX(15%) translateX(10%) rotateY(.30turn);
+    }
+    
+    
+    .wrinkles{
+        width: .5%;
+        height: 100%;
+        border: solid black 1px;
+        display: inline-block;
+    
+    }
+
+    #menu_container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+    }
+    section{
+
+        position: relative;
+        z-index: 1;
+        bottom: 100%;
+        width: 45%;
+        border: solid blueviolet 4px;
+
+    }
+
+    /* thick n juicy, multi meat san, ace hunters, moogle mouse  */
+    .desk_multi_meat_figcaption{
+
+        margin-bottom: -5%;
+
+    }
+
+    .desk_steak_figcaption{
+
+        font-size: 75%;
+        margin-bottom: 5%;
+
+    }
+
+    .desk_ace_figcaption{
+
+        font-size: 75%;
+        margin-top: 1%;
+        margin-bottom: 0;
+
+    }
+
+    .desk_moogle_figcaption{
+
+
+        font-size: 75%;
+        margin-bottom: -2%;
+
+    }
+
+    .desk_fisherman_figcaption{
+
+        margin-bottom: -2%;
+
+
+    }
+
+    .desk_saltwater_figcaption{
+
+        font-size: 75%;
+        margin-bottom: -2%;
+
+
+    }
+
+    .desk_grease_figcaption{
+
+        font-size: 85%;
+        margin-bottom: 1%;
+
+    }
+
+
+
+
 
 }
 
@@ -767,7 +908,9 @@ links  */
 
 
 
+    
 
+    
 
 
 
