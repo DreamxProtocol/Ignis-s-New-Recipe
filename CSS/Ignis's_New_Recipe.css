@@ -56,7 +56,7 @@ html{
     font-size: 1.1rem;
 }
 
- /* clouds  */
+ /* clouds that lead to the welcome message  */
 .circle{
     position: absolute;
     border: solid white 5px;
@@ -480,18 +480,20 @@ input{
 
 /* when you refresh or first enter the page, the form and menu 
 are missing... had to "display: none" because they are imaginary
-links  */
+links 
+this problem could have been avoided if i had made seperate new 
+html pages for each. one for home, menu, form */
 #menu_holder, figcaption, #form_container{
-
     display: none;
-
 }
 
-
-/* "low_px" means 336px-356px
-"medium_px" means 357px-371px
-372px-385px is "normal" (when making this)
-"big_px" means 386px-444px */
+/* "low_px" means 336px-356px for mobile 
+"medium_px" means 357px-371px for mobile 
+372px-385px is "normal" (when making this) (mobile design)
+"big_px" means 386px-444px for mobile
+min-width: 445px desktop view
+min-width: 755px desktop view
+*/
 
 @media screen and (min-width: 336px) and (max-width: 356px){
 
@@ -527,10 +529,7 @@ links  */
 }
 
 @media screen and (min-width: 357px) and (max-width: 371px){
-    /* #welcome_message{
-        font-size: 1rem;
-    } */
-
+    
     /* Pit Crew's Meat Wraps, Ace Hunter's Schnitzel*/
     .medium_px_less_pic_margin{
         margin-bottom: 3%;
@@ -551,9 +550,11 @@ links  */
     .big_margin{
         margin-bottom: 16%;
     }
-
 }
 
+/* beginning of the desktop view, with this px,
+the menu still has the mobile structure and also 
+does not have the "book open transition" */
 @media screen and (min-width: 445px){
 
     html{
@@ -575,9 +576,9 @@ links  */
     }
 
     /* got rid of the hamburger icon and 
-    broke apart the nav 
+    broke apart the nav. 
     new nav so that when it is clicked on
-    it remains (javascript gets rid of original nav)*/
+    it remains (javascript gets rid of original nav thats is used in mobile view)*/
     #navv_desk{
         display:block;
         position: static;
@@ -590,12 +591,10 @@ links  */
         align-self: flex-end;
         justify-content: space-between;  
         list-style:none;
-        /* border: solid green 2px; */
     }
     
     /* holds the desk_nav_decor */
     .nav_decor{
-        /* border: solid yellow 5px; */
         margin: 0;
         width: 25%;
         border: none;
@@ -603,8 +602,8 @@ links  */
         justify-content: flex-end;
     }
 
+    /* decoration for the desktop nav */
     .desk_nav_decor{
-        /* border: solid blue 1px; */
         background: none;
         width: 100%;
         font-size: 1.1rem;
@@ -623,18 +622,21 @@ links  */
         margin-right: 25%;
     }
 
+    /* giant home container, containing everything for home tab */
     #home_container{
         width: 45%;
         height: 82%;
         float: right;
-        margin: 1% 5% 0 0;
-        
+        margin: 1% 5% 0 0; 
     }
 
+    /* circles underneath the featured items 
+    that allow you to change item */
     #switchers{
         cursor: pointer;
     }
 
+    /* the container for the entire form */
     #form_container{
         width: 45%;
         height: 82%;
@@ -660,66 +662,51 @@ links  */
     #menu_holder{
         display: flex;
         height: 100vh;
-        /* transform: rotateY(.5turn); */
         transition-duration: 2s;
-        
     }
 
     #menu_text{
-
         cursor: pointer;
         margin: 1% 0 0 0 ;
-
     }
 
     #menu_text:hover{
-
         background: yellow;
-    
     }
 
+    /* this will be used to flip the menu_holder, 
+    using JavaScript */
     .menu_flip{
-
         transform: rotateY(1turn);
-
     }
 
-    
-
+    /* sections for type of food, followed by its 4 items */
     section{
         margin-top: 2%;
-        
-        height: 45%;
-        
+        height: 45%; 
     }
-
-    
 
     .menu_pic{
         margin-bottom: 0;
     }
 
-    
-
-    
-
-
-
-    
+    /* menu categories, kids , meats... */
     h4{
-
         margin: 1% 0 2% 0;
     }
 
+    /* these details are shown only in desktop view,
+    structure is different, thats all (no hovering) */
     .desktop_menu_details{
-
         display: flex;
         flex-direction: column;
         width:100%;
-        
-
     }
 
+    /* this holds ALL the menu details,
+    only shown in desktop view,
+    different structure thats all,
+    desktop_menu_details is inside of this */
     figcaption{
         text-align: center;
         background-color: rgb(178, 194, 199);
@@ -730,11 +717,12 @@ links  */
         flex-direction: column;
         align-items: center;
         font-size: 85%;
-        /* display:none; */
     }
 
+    /* item name for mobile view has some unwanted
+    properties/html structure so a new <span> was made 
+    specifically for desktop view */
     .item_name2, .ingredients, .cost{
-
         margin-top: 1%;
     }
 
@@ -742,43 +730,37 @@ links  */
         font-weight:bold ;
     }
 
+    /* adjustments for the <figcaptions> for 
+    some of the menu items, for alignment purposes
+    desktop view (not full view) */
     .desk_moogle_figcaption{
-
-
         font-size: 75%;
         margin-bottom: -2%;
-
     }
 
     .desk_fisherman_figcaption{
-
         margin-bottom: 15%;
         font-size: 75%;
-
-
     }
 
     .desk_grease_figcaption{
-
         font-size: 75%;
         margin-bottom: -1%;
-
     }
     
-
-    
-
-    
-
+    /* display none, either because it's unwanted 
+    mobile view stuff or because we want to "none"
+    the "fake" links and display them when called */
     .item_name, #ham_icon, #navv, #welcome_page, .mobile_menu_details, #menu_holder{
         display: none;
     }
 
 }
 
-@media screen and (min-width: 755 px){
+@media screen and (min-width: 755px){ 
 
-
+    /* this is the menu cover only for the desktop view 
+    transition */
     #cover{
         z-index: 2;
         position: relative;
@@ -788,6 +770,8 @@ links  */
         justify-content: space-between;
     }
     
+    /* to open up like a book, cover left and right that
+    has an opening in the middle */
     #menu_cover_right, #menu_cover_left {  
         border: solid black 1px;
         width: 49.5%;
@@ -801,6 +785,7 @@ links  */
         box-shadow: inset 280px 10px 260px 0px lightskyblue;
     }
     
+    /* transition class used in JavaScript */
     .mc_right_transition{
         transform-origin:  right;
         transform: scaleX(15%) translateX(-10%) rotateY(.30turn) ;    
@@ -811,91 +796,75 @@ links  */
         box-shadow: inset -280px -10px 260px 0px lightskyblue;
     }
     
+    /* transition class used in JavaScript */
     .mc_left_transition{
         transform-origin:  left;
         transform: scaleX(15%) translateX(10%) rotateY(.30turn);
     }
     
-    
+    /* wrinkles for the menu cover decorations */
     .wrinkles{
         width: .5%;
         height: 100%;
         border: solid black 1px;
         display: inline-block;
-    
     }
 
+    /* container for the food, entire menu 
+    here, the flex direction is different here*/
     #menu_container{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    
     }
-    section{
 
+    /* sections for type of food, followed by its 4 items 
+    here, the section is positioned under the "cover"
+    so a position and index is made*/
+    section{
         position: relative;
         z-index: 1;
         bottom: 100%;
         width: 45%;
         border: solid blueviolet 4px;
-
     }
 
+    /* here the figcaptions for these items need to 
+    be adjusted for alignment for full desktop view only*/
     /* thick n juicy, multi meat san, ace hunters, moogle mouse  */
     .desk_multi_meat_figcaption{
-
         margin-bottom: -5%;
-
     }
 
     .desk_steak_figcaption{
-
         font-size: 75%;
         margin-bottom: 5%;
-
     }
 
     .desk_ace_figcaption{
-
         font-size: 75%;
         margin-top: 1%;
         margin-bottom: 0;
-
     }
 
     .desk_moogle_figcaption{
-
-
         font-size: 75%;
         margin-bottom: -2%;
-
     }
 
     .desk_fisherman_figcaption{
-
         margin-bottom: -2%;
-
-
     }
 
     .desk_saltwater_figcaption{
-
         font-size: 75%;
         margin-bottom: -2%;
-
-
     }
 
     .desk_grease_figcaption{
-
         font-size: 85%;
         margin-bottom: 1%;
-
     }
-
-
-
-
 
 }
 
