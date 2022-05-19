@@ -25,6 +25,7 @@
     
 ## Completed Pictures
   - Desktop View
+  
   ![desktop view completed site](./Rough%20drafts%20and%20final%20pics/desktop_view1.png)
   
   - Mobile View
