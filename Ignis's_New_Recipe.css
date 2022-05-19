@@ -96,7 +96,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-    background-image: url(C:/Users/Marsea/Desktop/Front%20End%20Practice/Ignis%27s%20New%20Recipe/Color_References/Altissia.jpg);
+    background-image: url(./Color_References/Altissia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
@@ -136,7 +136,7 @@ its *inside ham_icon */
     width: 50%;
     padding: 5px;
     background-color: rgb(167, 212, 227);
-    background-image: url(C:/Users/Marsea/Desktop/Front%20End%20Practice/Ignis%27s%20New%20Recipe/Color_References/Ignis.cheers.1.png);
+    background-image: url(./Color_References/Ignis.cheers.1.png);
     background-repeat: no-repeat;
     background-position-y: 52%;
     background-position-x: 55%;
@@ -558,7 +558,7 @@ does not have the "book open transition" */
 @media screen and (min-width: 445px){
 
     html{
-        background-image: url(C:/Users/Marsea/Desktop/Front%20End%20Practice/Ignis%27s%20New%20Recipe/Color_References/Altissia.jpg);
+        background-image: url(./Color_References/Altissia.jpg);
         background-size: cover;
         background-position-y: 25%;
     }
