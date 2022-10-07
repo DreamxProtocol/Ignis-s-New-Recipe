@@ -2,6 +2,9 @@
 
 ## Site
   https://marcelino-g.github.io/Ignis-s-New-Recipe/
+  
+## Video Presentation
+  https://youtu.be/JOTBSyceq4o
 
 ## What
   Ignis's New Recipe is a fictional restaurant website for the owner, Ignis. The purpose of this site is to inform customers of the food choices that the restaurant offers and to let them know that feedback is welcomed. 
@@ -31,6 +34,3 @@
   - Mobile View
   
   ![mobile view completed site](./Rough%20drafts%20and%20final%20pics/mobile_view2.png)
- 
-## Video Presentation
-  https://youtu.be/cKkx3VrFvRE
